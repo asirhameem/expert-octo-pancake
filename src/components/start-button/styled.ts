@@ -1,5 +1,5 @@
-import styled, { CSSObject } from 'styled-components';
-import { gameConfig } from '../../config/game-config';
+import styled, {CSSObject} from 'styled-components';
+import {gameConfig} from '../../config/game-config';
 
 export const ButtonStyled = styled.button(
   (): CSSObject => ({
@@ -25,6 +25,18 @@ export const ButtonStyled = styled.button(
     },
     ':active': {
       transform: 'translateY(0px)',
+    },
+
+    // '@media(max-width: 359px) and (min-height: 640px)': {
+    //   fontSize: '0.8rem'
+    // },
+    // '@media(max-height: 639px) and (min-width: 360px)': {
+    //   fontSize: `0.8rem`,
+    // },
+    '@media(max-width: 359px) or (max-height: 639px)': {
+      fontSize: `0.8rem`,
+      borderRadius: '12px',
+      height: 40
     },
   }),
 );
