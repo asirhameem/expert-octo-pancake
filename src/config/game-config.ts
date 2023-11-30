@@ -1,7 +1,5 @@
 export const gameConfig = {
   container: {
-    width: '85vw',
-    height: '100vh',
     maxHeight: 640,
     maxWidth: 360,
     borderRadius: 24,
